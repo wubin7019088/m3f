@@ -57,9 +57,6 @@ function [err] = m3f_tif_exper(experName, dataName, splitNums, initMode, ...
 
 % -----------------------------BEGIN CODE--------------------------------
 
-% Compile necessary MEX dependencies
-make_mex(true, false, true);
-
 %% For each train-test split
 for s = splitNums
    %% Seed random number generators
